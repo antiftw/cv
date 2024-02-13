@@ -1,0 +1,17 @@
+{% assign languages = site.data.sidebar.languages %}
+
+{% if languages %}
+<div class="sidebar-sub-container">
+    <div class="details">
+        <h2 class="container-title">{{ languages.title }}</h2>
+        <ul class="sidebar-items">
+            {% for language in languages.items %}
+            <li class="sidebar-item">
+                <span class="title">{{ language.idiom }}</span>
+                <span class="level">({{ language.fluency }})</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endif %}

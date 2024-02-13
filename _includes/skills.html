@@ -1,0 +1,25 @@
+{% assign skills = site.data.skills %}
+{% if skills %}
+<section class="skills-section">
+    <h2 class="section-title">
+        <span class="fa-stack fa-xs">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+        </span>
+        {{ skills.title }}
+    </h2>
+    <div class="skillset">
+        {% for skill in skills.toolset %}
+        <div class="item">
+            <h3 class="level-title">{{ skill.name }}</h3>
+            <meter class="skill-level" max="100" value="{{skill.level}}">
+                <!-- Used for older browsers who do not recognize the meter element -->
+                {% assign percentageStyle = 'width: ' | append: skill.level | append: '%' %}
+                <span style="{{ percentageStyle }}"></span>
+            </meter>
+
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

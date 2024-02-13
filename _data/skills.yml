@@ -1,0 +1,22 @@
+title: Skills &amp; Proficiency
+toolset:
+  - name: PHP
+    level: 90
+  - name: MySQL
+    level: 90
+  - name: Symfony
+    level: 85
+  - name: Redis
+    level: 80
+  - name: Typescript
+    level: 75
+  - name: Javascript
+    level: 75
+  - name: HTML5 & CSS
+    level: 70
+  - name: Angular
+    level: 60
+  - name: Docker
+    level: 60
+  - name: Test Driven Development
+    level: 50

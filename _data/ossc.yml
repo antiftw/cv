@@ -1,0 +1,11 @@
+title: OSS Contributions
+intro: >
+  Some of the modest contributions I have done to open source projects.
+contributions:
+  - title: NotKeepersNeeds - FIX
+    url: "https://www.nexusmods.com/graveyardkeeper/mods/29"
+    description: "An adaptation of the NotKeepersNeeds mod for Graveyard Keeper to enable it to run on newer versions of the game."
+  - title: docker-automysqlbackup
+    url: "https://github.com/antiftw/docker-automysqlbackup"
+    description: "Added WebDav support to an existing project of a Docker container for AutoMysqlBackup to be able to backup MySql 
+    databases directly to a WebDav server."

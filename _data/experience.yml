@@ -1,0 +1,31 @@
+title: Experience
+positions:
+  - title: Medior Fullstack Developer
+    date: 2016 - 2018
+    company: The Insiders, Oosterhout, Netherlands
+    description: |
+      I was employed to migrate the legacy code to a Symfony application, 
+      so I spent most of my time on that. However, I also maintained and 
+      integrated new functionality into the existing application, after 
+      researching the best techniques and ways to implement them.
+    techniques:
+      - PHP
+      - Symfony
+      - MySQL
+      - Javascript
+      - HTML & CSS
+  - title: Junior Fullstack Developer
+    date: 2013 - 2016
+    company: eHealth Ventures Group, Oud Gastel, Netherlands 
+    description: |
+      Maintain and develop multiple web applications. Spent most of my time
+      developing a web application for the eHealth sector. This application
+      empowered patients to take control of their own health and care. 
+      Also worked on migrating the legacy code of that application to a 
+      Symfony application.
+    techniques:
+      - PHP
+      - Symfony
+      - MySQL
+      - Javascript (AJAX, jQuery)
+      - HTML & CSS

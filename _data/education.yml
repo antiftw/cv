@@ -1,0 +1,46 @@
+title: Education
+institutions:
+  - degree: MSc in Game and Media Technology
+    name: University of Utrecht
+    location: Utrecht, Netherlands
+    date: 2011 - 2013
+    description: |
+      Unable to finish due to financial reasons. Was very insigthful and learned a lot about techniques
+      that were not taught in my BSc, such as Computer Vision, Computer Animation and a broad array of Game Development
+      techniques. I did also realize that I was more interested in building software than in building games.
+    languages:
+      - C++
+      - OpenGL
+        
+  - degree: BSc in Computer Science (BCS)
+    name: Radboud University
+    location: Nijmegen, Netherlands
+    date: 2005 - 2010
+    thesis:
+      title: "Kernel Machines for Multi-Class Classification: A Joint Kernel Approach"
+      subject: |
+        In this thesis we applied Machine Learning to find patterns in datasets. 
+        We are able to train an algorithm to make predictions about new data coming from the same source. 
+        We do this by using different algorithms and compare the results to see if any outperform the other. 
+        We also made some variations in one of the algorithms, namely RLS (Regularized Least Squares), 
+        to see if that makes any significant changes in performance.
+      link: "http://www.cs.ru.nl/bachelorscripties/2010/Antolin_Janssen___0516759___Kernel_Machines_for_Multi-Class_Classification:_A_Joint_Kernel_Approach.pdf"
+      grade: 8
+    description: |
+      Learned a lot about the Computer Science foundations, like the foundational mathematics such as Linear Algebra 
+      and Calculus but also relevant theory - such as Computational Complexity - that is used to engineer and develop 
+      robust, maintainable and efficient software. I was also introduced to a broad array of programming languages,
+      which made me realize that there is no such thing as the best programming language, but that each language has
+      its own strengths and weaknesses. I also learned that it is important to know the right tool for the job.
+    languages:
+      - C++
+      - C#
+      - Java
+      - Python
+  - degree: Atheneum Natuur en Techniek (VWO)
+    name: Koning Willem II College
+    location: Tilburg, Netherlands
+    date: 1999 - 2005
+    description: |
+      - Extra course in Computer Science
+      - Profielwerkstuk about embedded programming

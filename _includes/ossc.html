@@ -1,0 +1,26 @@
+{% assign ossc = site.data.ossc %}
+{% if ossc %}
+<section class="ossc-section">
+    <h2 class="section-title">
+        <span class="fa-stack fa-xs">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fas fa-box-open fa-stack-1x fa-inverse"></i>
+        </span>
+        {{ ossc.title }}
+      </h2>
+    {% if ossc.intro %}
+        <div class="intro">
+            <p class="ossc-intro">{{ ossc.intro }}</p>
+        </div>
+    {% endif %}
+    <div class="ossc-list">
+        {% for contribution in ossc.contributions %}
+        <div class="ossc-item">
+            <h3 class="ossc-title">{{ contribution.title }}</h3>
+            <p class="ossc-description">{{ contribution.description }} (<a href="{{ contribution.url }}" target="_blank">link</a>)</a></p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endif %}

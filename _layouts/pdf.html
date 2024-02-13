@@ -1,0 +1,40 @@
+---
+#Add "layout: compress" here to compress the html code
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        {% include head.html %}
+        <style>
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                display: -webkit-box; /* wkhtmltopdf uses this one */
+                -webkit-box-pack: center; /* wkhtmltopdf uses this one */ 
+            }
+            .content-container {
+                width: 70%;
+            }
+        </style>
+    </head>
+
+<body>
+  {% include scripts.html %}
+  <div class="flex-container page">
+
+    {% include sidebar.html %}
+    <div class="content-container">
+      {{ content }}
+    </div>
+
+  </div>
+
+
+  {% include footer.html %}
+
+</body>
+</html>
+

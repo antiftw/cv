@@ -1,0 +1,10 @@
+---
+
+---
+
+@import "bootstrap";
+@import "themes/{{ site.theme-color  | default: 'blue'}}";
+@import "base";
+@import "responsive";
+
+// Add your own styles below

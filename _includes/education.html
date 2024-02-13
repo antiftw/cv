@@ -1,0 +1,33 @@
+{% assign education = site.data.education %}
+{% if education %}
+    <section class="education">
+        <h2 class="section-title">
+            <span class="fa-stack fa-xs">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+            </span>
+            {{ education.title }}
+        </h2>
+        <div class="education-list">
+            {% for institute in education.institutions %}
+                <div class="education-item">
+                    <div class="education-head">
+                        <h3 class="education-degree">{{ institute.degree }}</h3>
+                        <div class="education-date">{{ institute.date }}</div>
+                    </div>
+                    <p class="education-name">{{ institute.name }}, {{ institute.location }}</p>
+                    <p class="education-description">{{ institute.description | markdownify }}</p>
+                    {% if institute.thesis %}
+                    <div class="thesis">
+                        <h5 class="thesis-header">Thesis:</h5>
+                        <a href="{{ institute.thesis.link }}">{{ institute.thesis.title }}</a>
+                        <h6 class="thesis-sub-header">Subject:</h6>
+                        {{ institute.thesis.subject }}
+                        <h6 class="thesis-sub-header">Grade: {{ institute.thesis.grade }} </h6>
+                    </div><!--//thesis-->
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endif %}

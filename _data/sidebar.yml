@@ -1,0 +1,48 @@
+# This file contains the data for the sidebar of the website
+# Personal Information
+personal:
+  title: Personal Details
+  name: Antolin Janssen
+  tagline: Software Engineer
+  avatar:  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  email: admin@antiftw.nl
+  phone:
+  timezone: Europe/Amsterdam
+  nationality: Dutch
+  website: www.antiftw.nl #do not add http://
+# Handles:
+# Add your social media handles and programming related handles here
+handles:
+  title: Handles
+  # Social media handles
+  linkedin: antolin-janssen
+  telegram: antiftw
+  twitter: '@AntolinJanssen'
+  # Programming related handles
+  stack-overflow: 3569294/antiftw
+  github: antiftw
+  bitbucket: antiftw
+
+# Link to PDF File of CV
+pdf: https://antiftw.github.io/cv/cv.pdf 
+
+# Languages
+languages:
+  title: Languages
+  items:
+    - idiom: Dutch
+      fluency: Native
+    - idiom: English
+      fluency: Fluent
+    - idiom: Spanish
+      fluency: Limited
+    - idiom: Portugese
+      fluency: Limited
+
+# Interests
+interests:
+  title: Interests
+  items:
+    - name: Cooking
+    - name: Gaming
+    - name: Swimming

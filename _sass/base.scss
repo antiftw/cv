@@ -1,0 +1,178 @@
+// .wrapper {
+//     height: 100%;
+//     max-width: 1000px;
+// }
+@page {
+    size: A4;
+    margin: 0;
+  }
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+    /* ... the rest of the rules ... */
+}
+  
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: auto;
+}
+a {
+    color: lighten($color: $primary-color, $amount: 10%);
+    text-decoration: none;
+    &:hover {
+        color: darken($primary-color, 20%);
+        text-decoration: underline;
+    }
+    &:visited {
+        color: lighten($color: $primary-color, $amount: 10%);
+    }
+}
+
+
+.sidebar-container {
+    background-color: $primary-color;
+    padding: 0;
+    margin:0px;
+    min-width:240px;
+    flex: 20%;
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        &:hover {
+            color: darken($tertiary-color, 20%);
+            text-decoration: underline;
+        }
+        &:visited {
+            color: $secondary-color;
+        }
+    }
+    .sidebar-items {
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar-item {
+        list-style-type: none; /* Remove bullets */
+        padding: 0 0 0 10px;
+        margin: 0; /* Remove margins */
+      }
+}
+
+
+
+.content-container {
+    padding: 20px;
+    flex: 80%
+}
+
+.profile-container {
+    min-width: 210px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // padding: 20px 20px;
+    // margin: 0;
+    // background-color: darken($color: $primary-color, $amount: 20%);
+}
+
+.profile-head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    margin: 0;
+    background-color: darken($color: $primary-color, $amount: 20%);
+
+}
+
+.profile-name{
+    text-align: center;
+    font-size: larger;
+    color: lighten($color: $primary-color, $amount: 20%);
+    margin: 0px 0px 10px 0px;
+}
+
+.profile-tagline {
+    text-align: center;
+    font-size: medium;
+    color: lighten($color: $primary-color, $amount: 20%);
+    margin: 0px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.sidebar-sub-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0 ;
+    
+}
+
+.container-title {
+    color: $secondary-color;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.fa-graduation-cap,
+.fa-user,
+.fa-briefcase,
+.fa-archive,
+.fa-box-open,
+.fa-stack-1x,
+.fa-wrench{
+    color: $primary-color;
+}
+
+.fa-circle {
+    color: $secondary-color;
+}
+
+.position-title,
+.education-degree {
+    display: inline-block;
+}
+
+.position-date,
+.education-date{
+    color: lighten($color: $primary-color, $amount: 10%);
+    float: right;
+    //flex: 25%;
+}
+
+
+.position-company,
+.education-name {
+    color: lighten($color: $primary-color, $amount: 10%)
+}
+
+.thesis-sub-header {
+    margin: 10px 0px;
+}
+
+.skill-level {
+
+    color: $primary-color;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+// Firefox
+meter::-moz-meter-bar {
+    background: $primary-color;
+}
+// Chrome
+meter::-webkit-meter-optimum-value {background:$primary-color;}
+meter::-webkit-meter-suboptimum-value{background:$primary-color;}
+meter::-webkit-meter-even-less-good-value{background:$primary-color;}

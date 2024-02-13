@@ -1,0 +1,17 @@
+{% assign interests = site.data.sidebar.interests %}
+
+{% if interests %}
+<div class="sidebar-sub-container">
+    <div class="details">
+        <h2 class="container-title">{{ interests.title }}</h2>
+        <ul class="sidebar-items">
+            {% for interest in interests.items %}
+            <li class="sidebar-item">
+                <span class="title">{{ interest.name }}</span>
+                
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endif %}

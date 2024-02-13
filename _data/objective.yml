@@ -1,0 +1,30 @@
+title: |-
+  Objective
+
+content: |
+      Develop myself as an IT professional to be able to handle 
+      a broad spectrum of problems related to Computer Science. 
+      Growing up as a son of a father who taught himself everything 
+      he knows about computers and the field, I was naturally drawn to it. 
+      Because of this, I decided at a young age to study Computer Science 
+      as far as I could. 
+
+      So, choosing the additional course of Computer Science at my middle 
+      school was an obvious choice. After that I finished my BSc in this 
+      field and almost finished my MSc. Due to financial reasons I wasn't 
+      able to finish this, and since then I am looking for the right 
+      challenge to apply my skills and satisfy my interests.
+
+      I take joy in finding solutions to problems and I've always been 
+      actively researching new methods and techniques in my personal time
+      to help create these solutions in a robust, elegant and efficient way. 
+      As of yet I have not encountered a problem to which I was unable to find 
+      a satisfying solution.
+
+      Recently I have been familiarizing myself with Docker and Test Driven Development (TDD). 
+      To this end, I am now running my personal server, a Raspberry PI - which runs a WebDAV-, 
+      mail- and web- server - using separate Docker containers behind a reverse proxy. 
+      I'm also in the process of rewriting my personal website using the TTD methodology and 
+      such that it uses the client-server architecture, having a Symfony back-end which is 
+      accessed by an Angular front-end through a REST API. For the next step I would like 
+      to research and implement a CI/CD pipeline to automate the deployment process.
