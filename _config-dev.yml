@@ -1,9 +1,0 @@
-url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
-assets:
-  css_compressor: scss
-sass:
-  style: compressed
-  load_paths:
-    - vendor/bundle/ruby/3.0.0/gems

@@ -2,26 +2,27 @@
 <!-- <div class="col-lg-2 col-md-2 sidebar-container"> -->
 <div class="sidebar-container">
   <div class="profile-container">
-
     <div class="profile-head-container">
-      {% if sidebar.avatar %}
-      <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
+      {% if sidebar.personal.avatar %}
+      <img class="avatar" src="{{ site.baseurl }}/assets/img/{{ sidebar.personal.avatar }}" alt="profile picture" />
       {% endif %}
-
-      {% if sidebar.personal.name %}
-      <h1 class="profile-name">{{ sidebar.personal.name }}</h1>
-      {% endif %}
-
-      {% if sidebar.personal.tagline %}
-      <h5 class="profile-tagline">{{ sidebar.personal.tagline }}</h5>
-      {% endif %}
+      {% if sidebar.personal.name %}<h1 class="profile-name">{{ sidebar.personal.name }}</h1>{% endif %}
+      {% if sidebar.personal.tagline %}<h5 class="profile-tagline">{{ sidebar.personal.tagline }}</h5>{% endif %}
     </div>
-
-
     <div class="details-container">
       {% include contact.html %}
+      {% include handles.html %}
       {% include languages.html %}
       {% include interests.html %}
+      {% if sidebar.pdf %}
+      <div class="sidebar-sub-container">
+        <div class="sidebar-item pdf-item">
+          <i class="icon fas fa-file-pdf"></i>
+          <a href="{{ sidebar.pdf }}" target="_blank">Download this CV</a>
+      </div>
     </div>
+    
+    </div>
+  {% endif %}
   </div>
 </div>

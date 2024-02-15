@@ -6,6 +6,12 @@
         <a href="mailto:{{ sidebar.personal.email }}">{{ sidebar.personal.email }}</a>
     </div> 
     {% endif %}
+    {% if sidebar.personal.website %}
+    <div class="sidebar-item">
+        <i class="icon fas fa-globe"></i>
+        <a href="https://{{ sidebar.personal.website }}" target="_blank">{{ sidebar.personal.website }}</a>
+    </div>
+    {% endif %}
     <div class="sidebar-item">
         <i class="icon fas fa-phone"></i>
         
@@ -15,49 +21,33 @@
         Available on request
         {% endif %}
     </div>
-    {% if sidebar.personal.nationality %}
-    <div class="sidebar-item">
-        <i class="icon fas fa-passport"></i>
-        {{ sidebar.personal.nationality }}
-    </div>
-    {% endif %}
+    
     {% if sidebar.personal.timezone %}
     <div class="sidebar-item">
         <i class="icon fas fa-clock"></i>
         {{ sidebar.personal.timezone }}
     </div>
     {% endif %}
-    {% if sidebar.personal.website %}
+    {% if sidebar.personal.nationality %}
     <div class="sidebar-item">
-        <i class="icon fas fa-globe"></i>
-        <a href="https://{{ sidebar.personal.website }}" target="_blank">{{ sidebar.personal.website }}</a>
+        <i class="icon fas fa-passport"></i>
+        {{ sidebar.personal.nationality }}
     </div>
     {% endif %}
-    {% if sidebar.pdf %}
+    {% if sidebar.personal.address %}
     <div class="sidebar-item">
-        <i class="icon fas fa-file-pdf"></i>
-        <a href="{{ sidebar.pdf }}" target="_blank">Download CV</a>
+        <i class="icon fas fa-map-marker-alt"></i>
+        {{ sidebar.personal.address }}
     </div>
     {% endif %}
-</div>
-<div class="sidebar-sub-container">
-    <h2 class="container-title">{{sidebar.handles.title}}</h2>
-    {% if sidebar.handles.linkedin %}
+    {% assign today = site.time | date: '%s' %}
+    {% assign birthday = sidebar.personal.birthdate | date: '%s'  %}
+    {% assign secondsSince = today | minus: birthday %}
+    {% assign yearsSince = secondsSince | divided_by: 3600 | divided_by: 24 | divided_by: 365 %}
+    {% if sidebar.personal.birthdate %}
     <div class="sidebar-item">
-        <i class="icon fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/{{ sidebar.handles.linkedin }}" target="_blank">{{ sidebar.handles.linkedin }}</a>
-    </div>  
-    {% endif %}
-    {% if sidebar.handles.github %}
-    <div class="sidebar-item">
-        <i class="icon fab fa-github"></i>
-        <a href="https://github.com/{{ sidebar.handles.github }}" target="_blank">{{ sidebar.handles.github }}</a>
-    </div>
-    {% endif %}
-    {% if sidebar.handles.twitter %}
-    <div class="sidebar-item">
-        <i class="icon fab fa-twitter"></i>
-        <a href="https://twitter.com/{{ sidebar.handles.twitter }}" target="_blank">{{ sidebar.handles.twitter }}</a>
+        <i class="icon fas fa-birthday-cake"></i>
+        {{ yearsSince }} years
     </div>
     {% endif %}
 </div>

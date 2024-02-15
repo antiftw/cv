@@ -1,7 +1,18 @@
-url: "https://antiftw.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/cv" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+url: "https://cv.antiftw.nl" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl:  # the subpath of your site, e.g. /blog
+title: "AntiFTW.nl | CV" # the name of your site, e.g. ACME Corp.
+description: "The Curriculum Vitae of Antolin Janssen" # a short description of site's purpose
 assets:
   css_compressor: scss
 sass:
   style: compressed
+
+analytics: G-K09MRBR6EW
+
+compress-site: true
+
+encoding: "utf-8"
+compress_html: # - http://jch.penibelst.de/
+  clippings: all
+  ignore:
+    envs: development

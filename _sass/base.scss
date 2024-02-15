@@ -1,17 +1,13 @@
-// .wrapper {
-//     height: 100%;
-//     max-width: 1000px;
-// }
+
 @page {
     size: A4;
     margin: 0;
-  }
+}
 @media print {
     html, body {
         width: 210mm;
         height: 297mm;
     }
-    /* ... the rest of the rules ... */
 }
   
 .flex-container {
@@ -31,7 +27,6 @@ a {
         color: lighten($color: $primary-color, $amount: 10%);
     }
 }
-
 
 .sidebar-container {
     background-color: $primary-color;
@@ -58,9 +53,19 @@ a {
         list-style-type: none; /* Remove bullets */
         padding: 0 0 0 10px;
         margin: 0; /* Remove margins */
-      }
+    }
+    .pdf-item {
+        padding-left: 0px;
+    }
 }
 
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0 10px 0;
+
+}
 
 
 .content-container {
@@ -124,6 +129,17 @@ a {
     text-transform: uppercase;
 }
 
+section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    margin-bottom: 10px;
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
 .fa-graduation-cap,
 .fa-user,
 .fa-briefcase,
@@ -138,22 +154,31 @@ a {
     color: $secondary-color;
 }
 
+
 .position-title,
 .education-degree {
     display: inline-block;
+    margin: 10px 0px 5px 0px;
 }
 
 .position-date,
 .education-date{
     color: lighten($color: $primary-color, $amount: 10%);
     float: right;
+    margin-top: 10px;
     //flex: 25%;
 }
 
 
 .position-company,
 .education-name {
-    color: lighten($color: $primary-color, $amount: 10%)
+    color: lighten($color: $primary-color, $amount: 10%);
+    margin-top: 0px;
+}
+
+.thesis-header {
+    margin: 20px 0px 10px 0px;
+
 }
 
 .thesis-sub-header {
@@ -161,11 +186,9 @@ a {
 }
 
 .skill-level {
-
     color: $primary-color;
     font-weight: bold;
     width: 100%;
-
 }
 
 // Firefox

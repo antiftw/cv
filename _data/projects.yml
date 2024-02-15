@@ -3,28 +3,32 @@ intro: >
   Different projects I have worked on in both a professional and personal capacity.
 projects:
   - title: My Insiders Account
-    url: "https://www.theinsidersnet.com/en-us/user/data/"
-    description: "The profile pages of the users of TheInsidersNet.com."
+    description: | 
+      The <a target="_blank" href="https://www.theinsidersnet.com/en-us/user/data/">profile pages</a>
+      for the end-users of TheInsidersNet.com.
   - title: DokterOnline Sooqr integration
-    url: "https://www.dokteronline.com"
-    description: "Integration of the Sooqr search engine into the DokterOnline.com website."
+    description: | 
+      Integration of the <a target="_blank" href="https://www.sooqr.com/">Sooqr</a> search engine into
+      the <a target="_blank" href="https://www.dokteronline.com">DokterOnline.com</a> platform.
   - title: DokterOnline Webex Online video consultation
-    url: 
-    description: "Integration of Webex into the DokterOnline.com website to enable online 
-    video consultations with doctors. (apparently discontinued)"
+    description: | 
+      Integration of Cisco Webex into the DokterOnline.com platform to enable online 
+      video consultations with doctors (apparently discontinued).
   - title: AntiFTW.nl
-    url: "https://www.antiftw.nl"
     description: |
-      My personal website. Has been over multiple iterations, and have now arrived on a client-server architecture. 
-      A Responsive, Progressive Web Application (PWA), which uses an Angular front-end that fetches its data from 
-      a Symfony backend using a REST API.
-  - title: Sapphire Discord Bot
-    url: "https://github.com/antiftw/sapphire"
-    description: "Implemented a Discord bot using the Sapphire Framework. It's main use is to fetch and serve recipes from my personal 
-    website inside my Discord channel."
+      My personal <a target="_blank" href="https://www.antiftw.nl">website</a>. 
+      Has been over multiple iterations, and have now arrived on a client-server architecture. 
+      A Responsive, Progressive Web Application (PWA), which uses an Angular front-end that 
+      fetches its data from a Symfony backend using a REST API.
   - title: Server Bootstrap
     url:
-    description: "A collection of scripts and configuration files to bootstrap a new server. It's main use is to automate the
-    process of setting up a new server. It contains scripts to install and configure a fully fledged e-mail-, web-, and Cal/Carddav- server.
-    Repository is private, but available on request.
-    "
+    description: | 
+      A collection of scripts and configuration files to bootstrap a new server. 
+      It's main use is to automate the process of setting up a new server. 
+      It contains scripts to install and configure a fully fledged e-mail-, web-, and Cal/Carddav- server.
+      Repository is private, but available on request.
+  - title: Sapphire Discord Bot
+    description: |
+      Implemented a <a target="_blank" href="https://github.com/antiftw/sapphire">Discord bot</a> 
+      using the Sapphire Framework. It's main use is to fetch and serve recipes from my personal 
+      website inside my Discord channel.

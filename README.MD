@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This is a HTML version of my Curriculum Vitae. It was inspired by [this](https://github.com/sharu725/online-cv.git) repository, but I decided to build a new version myself, giving me the opportunity to get to know Jekyll as well as fix some issues I had with that repository.
+This is a HTML version of my Curriculum Vitae. It was inspired by [this](https://github.com/sharu725/online-cv.git) repository, but I decided to build a new version myself, giving me the opportunity to get to know Jekyll as well as give it my own twist.
 
 ## Instructions
 
@@ -50,12 +50,11 @@ docker compose -f docker-compose-prod.yml up
 Github Pages:
 * Fork the repository.
 * Go to the settings page.
-* Click on `Pages` under `Code and Automation` header in the side-menu
+* Click on `Pages` under `Code and Automation` header in the side-menu.
 * Select the `main` branch under `Branch` to set it as the source and click `Save`.
-* The Github pages site will now be built from the branch, give it a moment to complete
-* The site should now be available under `https://<user>.github.io/cv/`
-
+* The Github pages site will now be built from the branch, give it a moment to complete.
+* The site should now be available under `https://<user>.github.io/cv/`.
 
 ## Credits
 
-- [Sharu725's online CV](https://github.com/sharu725/online-cv.git) for the idea.
+- [Sharu725's online CV](https://github.com/sharu725/online-cv.git) for the inspiration of creating a HTML CV and hosting it online.

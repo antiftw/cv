@@ -3,12 +3,15 @@
 personal:
   title: Personal Details
   name: Antolin Janssen
+  avatar: avatar.png #place a 100x100 picture inside /assets/img/ folder and provide the name of the file below
+  birthdate: '26-02-1987 00:00:00' 
   tagline: Software Engineer
-  avatar:  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
   email: admin@antiftw.nl
   phone:
   timezone: Europe/Amsterdam
   nationality: Dutch
+  address: Tilburg
   website: www.antiftw.nl #do not add http://
 # Handles:
 # Add your social media handles and programming related handles here

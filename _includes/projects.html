@@ -1,6 +1,6 @@
 {% assign projects = site.data.projects %}
 {% if projects %}
-<section class="project-section">
+<section class="projects">
     <h2 class="section-title">
         <span class="fa-stack fa-xs">
             <i class="fas fa-circle fa-stack-2x"></i>
@@ -12,7 +12,7 @@
         {% for project in projects.projects %}
         <div class="project-item">
             <h3 class="project-title">{{ project.title }}</h3>
-            <p class="project-description">{{ project.description }} {% if project.url %}(<a href="{{ project.url }}" target="_blank">link</a>) {% endif %}</p> 
+            <p class="project-description">{{ project.description }}</p> 
         </div>
         {% endfor %}
     </div>

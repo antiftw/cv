@@ -1,7 +1,6 @@
 {% assign objective = site.data.objective %}
 {% if objective %}
-<section class="objective-section">
-
+<section class="objective">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
@@ -12,7 +11,6 @@
 
   <div class="summary">
     {{ objective.content | markdownify }}
-  </div><!--//summary-->
-    
-</section><!--//section-->
+  </div>
+</section>
 {% endif %}

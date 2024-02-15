@@ -19,11 +19,11 @@
                     <p class="education-description">{{ institute.description | markdownify }}</p>
                     {% if institute.thesis %}
                     <div class="thesis">
-                        <h5 class="thesis-header">Thesis:</h5>
+                        <h4 class="thesis-header">Thesis:</h4>
                         <a href="{{ institute.thesis.link }}">{{ institute.thesis.title }}</a>
-                        <h6 class="thesis-sub-header">Subject:</h6>
+                        <h5 class="thesis-sub-header">Subject:</h5>
                         {{ institute.thesis.subject }}
-                        <h6 class="thesis-sub-header">Grade: {{ institute.thesis.grade }} </h6>
+                        <h5 class="thesis-sub-header">Grade: {{ institute.thesis.grade }} </h5>
                     </div><!--//thesis-->
                     {% endif %}
                 </div>
