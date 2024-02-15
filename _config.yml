@@ -1,6 +1,7 @@
 url: "https://cv.antiftw.nl" # the base hostname & protocol for your site, e.g. http://example.com
 #baseurl:  # the subpath of your site, e.g. /blog
 title: "AntiFTW.nl | CV" # the name of your site, e.g. ACME Corp.
+author: "Antolin Janssen" # the name of the site's author
 description: "The Curriculum Vitae of Antolin Janssen" # a short description of site's purpose
 assets:
   css_compressor: scss
