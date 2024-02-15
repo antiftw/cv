@@ -6,17 +6,15 @@ toolset:
     level: 90
   - name: Symfony
     level: 85
-  - name: Redis
-    level: 80
   - name: Typescript
-    level: 75
+    level: 80
   - name: Javascript
-    level: 75
+    level: 80
   - name: HTML5 & CSS
-    level: 70
+    level: 80
   - name: Angular
-    level: 60
+    level: 65
   - name: Docker
-    level: 60
+    level: 65
   - name: Test Driven Development
     level: 50
