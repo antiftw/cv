@@ -2,8 +2,13 @@ version: '3.5'
 
 services:
   jekyll:
+    restart: unless-stopped
     container_name: cv
-    image: jekyll/jekyll:4.0
+    #image: jekyll/jekyll:4.0
+    build: 
+      context: .
+      target: jekyll
+
     command: jekyll serve --watch --force_polling --verbose --livereload --port 80
     # environment:
     #   - JEKYLL_UID=1001
