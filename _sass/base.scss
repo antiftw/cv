@@ -108,7 +108,9 @@ a {
     display: flex;
     flex-direction: column;
     padding: 10px 0 0 0 ;
-    
+    & :last-of-type {
+        margin-bottom: 10px;
+    }
 }
 
 .container-title {
