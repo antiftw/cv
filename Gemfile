@@ -5,5 +5,9 @@ source "https://rubygems.org"
 # gem "rails"
 
 gem "jekyll"
-gem "github-pages"
+# Used to exclude github-pages gem on the Raspberry Pi
+group :github_pages do
+    gem "github-pages"
+end
 gem "webrick", "~> 1.8"
+gem "kramdown-parser-gfm"

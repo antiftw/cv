@@ -41,11 +41,26 @@ bundle exec jekyll serve --verbose --trace
 
 ### Production
 
+#### AMD/64
+
 Docker:
 
 ```bash
 docker compose -f docker-compose-prod.yml up
 ```
+
+#### ARM/64
+
+Since the official jekyll/jekyll Docker image is not suited for `arm` architecture, there's also a docker-compose file especially to be able to host this blog on a Raspberry Pi. It is at the moment configured for `arm/64` (based on the official Ruby [arm64v8 image](https://hub.docker.com/r/arm64v8/ruby/)), but there is a comment on how to switch to the older `arm/32` (based on the official Ruby [arm32v7 image](https://hub.docker.com/r/arm32v7/ruby/)) architecture.
+
+You can build and run this image using:
+
+```bash
+docker compose -f docker-compose-arm.yml build 
+docker compose -f docker-compose-arm.yml up
+```
+
+#### Github Pages
 
 Github Pages:
 * Fork the repository.
@@ -55,6 +70,12 @@ Github Pages:
 * The Github pages site will now be built from the branch, give it a moment to complete.
 * The site should now be available under `https://<user>.github.io/cv/`.
 
+
 ## Credits
 
 - [Sharu725's online CV](https://github.com/sharu725/online-cv.git) for the inspiration of creating a HTML CV and hosting it online.
+- [mrxder/jekyll-docker-arm64](https://github.com/mrxder/jekyll-docker-arm64) for the Dockerfile template.
+
+
+<!-- https://github.com/aleksanderbl29/jekyll-docker-arm -->
+<!-- https://github.com/mrxder/jekyll-docker-arm64 -->

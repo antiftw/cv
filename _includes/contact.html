@@ -43,10 +43,12 @@
     {% assign today = site.time | date: '%s' %}
     {% assign birthday = sidebar.personal.birthdate | date: '%s'  %}
     {% assign secondsSince = today | minus: birthday %}
-    {% assign yearsSince = secondsSince | divided_by: 3600 | divided_by: 24 | divided_by: 365 %}
+    {% assign daysSince = secondsSince | divided_by: 3600 | divided_by: 24 %}
+    {% assign yearsSince = secondsSince | divided_by: 3600 | divided_by: 24 | divided_by: 365.25 | minus: 0.5 | round %}
     {% if sidebar.personal.birthdate %}
     <div class="sidebar-item">
         <i class="icon fas fa-birthday-cake"></i>
+        {{ daysSince }} days
         {{ yearsSince }} years
     </div>
     {% endif %}

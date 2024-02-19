@@ -1,0 +1,23 @@
+# Dockerfile for use on arm64v8 architecture (used for Raspberry Pi)
+version: '3.7'
+
+services:
+  arm-minimal:
+    command: bundle exec jekyll serve --watch --force_polling --verbose --livereload --port 80 --host 0.0.0.0
+    restart: unless-stopped
+    build:
+      context: .
+      target: jekyll-minimal
+    labels:
+      caddy_01: cv.antiftw.nl
+      caddy_01.reverse_proxy: "{{upstreams 80}}"
+
+    networks:
+      - caddy
+    volumes:
+     - .:/srv/jekyll
+networks:
+  caddy:
+    external: true
+
+  
