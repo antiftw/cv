@@ -9,7 +9,7 @@ services:
       context: .
       target: jekyll
 
-    command: jekyll serve --watch --force_polling --verbose --livereload --port 80
+    command: jekyll serve --watch --force_polling --verbose --livereload --port 80 --host 0.0.0.0
     # environment:
     #   - JEKYLL_UID=1001
     #   - JEKYLL_GID=1001
