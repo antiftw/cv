@@ -15,7 +15,7 @@
                         <h3 class="education-degree">{{ institute.degree }}</h3>
                         <div class="education-date">{{ institute.date }}</div>
                     </div>
-                    <p class="education-name">{{ institute.name }}, {{ institute.location }}</p>
+                    <div class="education-name">{{ institute.name }}, {{ institute.location }}</div>
                     <p class="education-description">{{ institute.description | markdownify }}</p>
                     {% if institute.thesis %}
                     <div class="thesis">

@@ -17,14 +17,15 @@
     margin: auto;
 }
 a {
-    color: $primary-color-darker;
+    color: $primary-color-dark;
     text-decoration: none;
-    &:hover {
-        color: $primary-color-dark;
-        text-decoration: underline;
-    }
+    
     &:visited {
+        color: $primary-color-dark;
+    }
+    &:hover {
         color: $primary-color-darker;
+        text-decoration: underline;
     }
 }
 
@@ -37,12 +38,12 @@ a {
     a {
         color: $secondary-color;
         text-decoration: none;
+        &:visited {
+            color: $secondary-color;
+        }
         &:hover {
             color: $tertiary-color-darker;
             text-decoration: underline;
-        }
-        &:visited {
-            color: $secondary-color;
         }
     }
     .sidebar-items {
@@ -151,18 +152,23 @@ section {
 }
 
 .position-date,
-.education-date{
-    color: $primary-color-darker;
+.education-date {
+    color: $primary-color-dark;
     float: right;
     margin-top: 10px;
     //flex: 25%;
 }
 
+.paper-title {
+    margin: 10px 0px 5px 0px;
+    font-weight: 600;
+    text-decoration: none;
+}
 
 .position-company,
-.education-name {
-    color: $primary-color-darker;
-    margin-top: 0px;
+.education-name,
+.paper-authors {
+    color: $primary-color-dark;
 }
 
 .project-item,
@@ -172,7 +178,7 @@ section {
 
 .project-title,
 .ossc-title {
-    color: $primary-color-darker;
+    color: $primary-color-dark;
     margin: 10px 0px 5px 0px;
     font-weight: 500;
     text-decoration: none;
