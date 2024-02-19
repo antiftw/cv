@@ -16,8 +16,12 @@
     <div class="ossc-list">
         {% for contribution in ossc.contributions %}
         <div class="ossc-item">
-            <h3 class="ossc-title">{{ contribution.title }}</h3>
-            <p class="ossc-description">{{ contribution.description }}</p>
+            {% if contribution.url %}
+            <a target="_blank" href="{{ contribution.url }}" class="ossc-title">{{ contribution.title }}</a>
+            {% else %}
+            <span class="ossc-title">{{ contribution.title }}</span>
+            {% endif %}
+            <span class="ossc-description"> - {{ contribution.description }}</span>
         </div>
         {% endfor %}
     </div>

@@ -8,11 +8,20 @@
         </span>
         {{ projects.title }}
     </h2>
+    {% if projects.intro %}
+    <div class="projects-intro">
+        <p>{{ projects.intro }}</p>
+    </div>
+    {% endif %}
     <div class="project-list">
         {% for project in projects.projects %}
         <div class="project-item">
-            <h3 class="project-title">{{ project.title }}</h3>
-            <p class="project-description">{{ project.description }}</p> 
+            {% if project.url %}
+            <a target="_blank" href="{{ project.url }}" class="project-title">{{ project.title }}</a>
+            {% else %}
+            <span class="project-title">{{ project.title }}</span>
+            {% endif %}
+            <span class="project-description"> - {{ project.description }}</span>
         </div>
         {% endfor %}
     </div>

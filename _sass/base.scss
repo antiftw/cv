@@ -17,14 +17,14 @@
     margin: auto;
 }
 a {
-    color: lighten($color: $primary-color, $amount: 10%);
+    color: $primary-color-darker;
     text-decoration: none;
     &:hover {
-        color: darken($primary-color, 20%);
+        color: $primary-color-dark;
         text-decoration: underline;
     }
     &:visited {
-        color: lighten($color: $primary-color, $amount: 10%);
+        color: $primary-color-darker;
     }
 }
 
@@ -38,7 +38,7 @@ a {
         color: $secondary-color;
         text-decoration: none;
         &:hover {
-            color: darken($tertiary-color, 20%);
+            color: $tertiary-color-darker;
             text-decoration: underline;
         }
         &:visited {
@@ -72,15 +72,6 @@ a {
     flex: 80%
 }
 
-.profile-container {
-    min-width: 210px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // padding: 20px 20px;
-    // margin: 0;
-    // background-color: darken($color: $primary-color, $amount: 20%);
-}
 
 .profile-head-container {
     display: flex;
@@ -88,21 +79,21 @@ a {
     align-items: center;
     padding: 20px 20px;
     margin: 0;
-    background-color: darken($color: $primary-color, $amount: 20%);
+    background-color: $primary-color-darker;
 
 }
 
 .profile-name{
     text-align: center;
     font-size: larger;
-    color: lighten($color: $primary-color, $amount: 20%);
+    color: $primary-color-lighter;
     margin: 0px 0px 10px 0px;
 }
 
 .profile-tagline {
     text-align: center;
     font-size: medium;
-    color: lighten($color: $primary-color, $amount: 20%);
+    color: $primary-color-lighter;
     margin: 0px;
 }
 
@@ -161,7 +152,7 @@ section {
 
 .position-date,
 .education-date{
-    color: lighten($color: $primary-color, $amount: 10%);
+    color: $primary-color-darker;
     float: right;
     margin-top: 10px;
     //flex: 25%;
@@ -170,8 +161,21 @@ section {
 
 .position-company,
 .education-name {
-    color: lighten($color: $primary-color, $amount: 10%);
+    color: $primary-color-darker;
     margin-top: 0px;
+}
+
+.project-item,
+.ossc-item {
+    margin: 20px 0px;
+}
+
+.project-title,
+.ossc-title {
+    color: $primary-color-darker;
+    margin: 10px 0px 5px 0px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .thesis-header {
@@ -183,10 +187,16 @@ section {
     margin: 10px 0px;
 }
 
+.skill-title {
+    display: inline-block;
+    min-width: 200px;
+    margin: 10px 0px 5px 0px;
+}
+
 .skill-level {
     color: $primary-color;
     font-weight: bold;
-    width: 100%;
+    width: 70%;
 }
 
 // Firefox

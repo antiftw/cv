@@ -284,6 +284,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll
+  kramdown-parser-gfm
   webrick (~> 1.8)
 
 BUNDLED WITH

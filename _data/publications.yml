@@ -1,8 +1,16 @@
 title: Publications
-intro: |
-  Some of the papers I have written or contributed to.
+intro: >
+  The papers I have written or contributed to.
 papers:
   - title: Efficient Remote Homology Detection
     url: "https://www.researchgate.net/publication/46913587_Efficient_Remote_Homology_Detection"
     authors: Antolin Janssen, Evgeni Tsivtsivadze, Jorma Boberg, Tjeeard Dijkstra and Tom Heskes
     conference: Pattern Recognition in Bioinformatics, 2010
+    description: |
+      This paper was written as a part of my Bachelor Thesis.
+      It proposes an algorithm for eﬃcient remote homology detection.
+      Unlike many other methods our multi-class classiﬁcation algorithm uses
+      a co-regularization framework and allows construction of expressive features on
+      input-output spaces. Furthermore, it leads to notable decrease in training time
+      compared to algorithms that treat remote homology detection as a set of binary
+      classiﬁcation problems.

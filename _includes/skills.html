@@ -11,7 +11,7 @@
     <div class="skillset">
         {% for skill in skills.toolset %}
         <div class="item">
-            <h3 class="level-title">{{ skill.name }}</h3>
+            <h3 class="skill-title">{{ skill.name }}</h3>
             <meter class="skill-level" max="100" value="{{skill.level}}">
                 <!-- Used for older browsers who do not recognize the meter element -->
                 {% assign percentageStyle = 'width: ' | append: skill.level | append: '%' %}

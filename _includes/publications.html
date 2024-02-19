@@ -8,15 +8,21 @@
         </span>
         {{ publications.title }}
     </h2>
+    {% if publications.intro %}
+    <div class="publications-intro">
+        <p>{{ publications.intro }}</p>
+    </div>
+    {% endif %}
     <div class="paper-list">
         {% for paper in publications.papers %}
         <div class="paper-item">
             {% if paper.url %}
-                <a href="{{ paper.url }}"><h3 class="paper-title">{{ paper.title }}</h3></a>
+                <a href="{{ paper.url }}"><span class="paper-title">{{ paper.title }}</span></a>
             {% else %}
-                <h3 class="paper-title">{{ paper.title }}</h3>
+                <span class="paper-title">{{ paper.title }}</span>
             {% endif %}
             <p class="paper-authors">{{ paper.authors }}</p>
+            <p class="paper-description">{{ paper.description }}</p>
             <p class="paper-conference">{{ paper.conference }}</p>
            
         </div>

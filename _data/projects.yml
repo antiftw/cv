@@ -1,22 +1,25 @@
 title: Projects
 intro: >
-  Different projects I have worked on in both a professional and personal capacity.
+  Different projects I have worked on in both a professional and personal capacity. I've only given
+  a brief description of each project here, but I would not mind to elaborate further on any of them
+  if there are any questions.
 projects:
   - title: My Insiders Account
+    url: https://www.theinsidersnet.com/en-us/user/data/
     description: | 
-      The <a target="_blank" href="https://www.theinsidersnet.com/en-us/user/data/">profile pages</a>
-      for the end-users of TheInsidersNet.com.
+      The profile and account management system for the end-users of TheInsidersNet.com.
   - title: DokterOnline Sooqr integration
+    url: https://www.dokteronline.com/
     description: | 
-      Integration of the <a target="_blank" href="https://www.sooqr.com/">Sooqr</a> search engine into
-      the <a target="_blank" href="https://www.dokteronline.com">DokterOnline.com</a> platform.
+      Integration of the Sooqr search engine into the DokterOnline.com platform.
   - title: DokterOnline Webex Online video consultation
     description: | 
       Integration of Cisco Webex into the DokterOnline.com platform to enable online 
-      video consultations with doctors (apparently discontinued).
+      video consultations with doctors (discontinued).
   - title: AntiFTW.nl
+    url: https://www.antiftw.nl/
     description: |
-      My personal <a target="_blank" href="https://www.antiftw.nl">website</a>. 
+      My personal website.
       Has been over multiple iterations, and have now arrived on a client-server architecture. 
       A Responsive, Progressive Web Application (PWA), which uses an Angular front-end that 
       fetches its data from a Symfony backend using a REST API.
@@ -28,7 +31,7 @@ projects:
       It contains scripts to install and configure a fully fledged e-mail-, web-, and Cal/Carddav- server.
       Repository is private, but available on request.
   - title: Sapphire Discord Bot
+    url: https://github.com/antiftw/sapphire
     description: |
-      Implemented a <a target="_blank" href="https://github.com/antiftw/sapphire">Discord bot</a> 
-      using the Sapphire Framework. It's main use is to fetch and serve recipes from my personal 
-      website inside my Discord channel.
+      Implemented a Discord bot using the Sapphire Framework. It's main use is to fetch and
+      serve recipes from my personal website inside my Discord channel.

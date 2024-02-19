@@ -3,12 +3,12 @@ intro: >
   Some of the modest contributions I have done to open source projects.
 contributions:
   - title: NotKeepersNeeds - FIX
+    url: https://www.nexusmods.com/graveyardkeeper/mods/29
     description: |
-      An <a target="_blank" href="https://www.nexusmods.com/graveyardkeeper/mods/29">adaptation</a> 
-      of the NotKeepersNeeds mod for Graveyard Keeper to enable it to run on newer versions of the game,
-      as well as some minor bugfixes and other improvements.
+      An adadptation of the NotKeepersNeeds mod for Graveyard Keeper to enable it
+      to run on newer versions of the game, as well as some minor bugfixes and other improvements.
   - title: docker-automysqlbackup
+    url: https://github.com/antiftw/docker-automysqlbackup
     description: |
-      A <a target="_blank" href="https://github.com/antiftw/docker-automysqlbackup">fork</a> that adds 
-      WebDav support to an existing project of a Docker container for AutoMysqlBackup to be able to backup MySQLs 
-      databases directly to a WebDav server.
+      A fork that adds WebDav support to an existing project of a Docker container for
+      AutoMysqlBackup to be able to backup MySQL databases directly to a WebDav server.
