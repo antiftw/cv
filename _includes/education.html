@@ -17,6 +17,20 @@
                     </div>
                     <div class="education-name">{{ institute.name }}, {{ institute.location }}</div>
                     <p class="education-description">{{ institute.description | markdownify }}</p>
+                    {% if institute.techniques %}
+                    <div class="education-techniques">
+                        <span class="fa-stack fa-xs">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-language fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="education-techniques-title">Techniques:</span>
+                        <ul class="education-techniques-list">
+                            {% for language in institute.techniques %}
+                                <li>{{ language }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
                     {% if institute.thesis %}
                     <div class="thesis">
                         <h4 class="thesis-header">Thesis:</h4>

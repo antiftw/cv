@@ -161,18 +161,21 @@ section {
     //flex: 25%;
 }
 
-.position-techniques-list {        
+.position-techniques-list,
+.education-techniques-list {        
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     list-style: none;
 }
 
-.position-techniques-list li {
+.position-techniques-list li,
+.education-techniques-list li {
     margin: 0 0 5px 0;
 }
 
-.position-techniques-list li::before {
+.position-techniques-list li::before,
+.education-techniques-list li::before{
     content: "≻"; /* Add bullet before each item */
     //position: absolute;
     margin: 0 5px 0 -10px;
@@ -215,7 +218,7 @@ section {
 
 .skill-title {
     display: inline-block;
-    min-width: 200px;
+    min-width: 175px;
     margin: 10px 0px 5px 0px;
 }
 

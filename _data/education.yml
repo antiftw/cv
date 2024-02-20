@@ -7,8 +7,8 @@ institutions:
     description: |
       Unable to finish due to financial reasons. Was very insigthful and learned a lot about techniques
       that were not taught in my BSc, such as Computer Vision, Computer Animation and a broad array of Game Development
-      techniques. I did also realize that I was more interested in building software than in building games.
-    languages:
+      techniques. I also realized that I was more interested in building software than in building games.
+    techniques:
       - C++
       - OpenGL
         
@@ -29,10 +29,10 @@ institutions:
     description: |
       Learned a lot about the Computer Science foundations, like the foundational mathematics such as Linear Algebra 
       and Calculus but also relevant theory - such as Computational Complexity - that is used to engineer and develop 
-      robust, maintainable and efficient software. I was also introduced to a broad array of programming languages,
-      which made me realize that there is no such thing as the best programming language, but that each language has
+      robust, maintainable and efficient software. It was also the beginning of my journey in learning different programming
+      languages, which made me realize that there is no such thing as the best programming language, but that each language has
       its own strengths and weaknesses. I also learned that it is important to know the right tool for the job.
-    languages:
+    techniques:
       - C++
       - C#
       - Java
