@@ -9,8 +9,8 @@ institutions:
       that were not taught in my BSc, such as Computer Vision, Computer Animation and a broad array of Game Development
       techniques. I also realized that I was more interested in building software than in building games.
     techniques:
-      - C++
-      - OpenGL
+      # - C++
+      # - OpenGL
         
   - degree: BSc in Computer Science
     name: Radboud University
@@ -33,10 +33,10 @@ institutions:
       languages, which made me realize that there is no such thing as the best programming language, but that each language has
       its own strengths and weaknesses. I also learned that it is important to know the right tool for the job.
     techniques:
-      - C++
-      - C#
-      - Java
-      - Python
+      # - C++
+      # - C#
+      # - Java
+      # - Python
   - degree: Atheneum Natuur en Techniek (VWO)
     name: Koning Willem II College
     location: Tilburg, Netherlands
