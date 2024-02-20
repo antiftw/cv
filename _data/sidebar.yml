@@ -3,7 +3,7 @@
 personal:
   title: Personal Details
   name: Antolin Janssen
-  avatar: #avatar.png # Place your avatar in assets/img/ folder and uncomment this line - scaled to 150x150
+  avatar: photo.jpg #avatar.png # Place your avatar in assets/img/ folder and uncomment this line - scaled to 150x150
   birthdate: '26-02-1987 00:00:00' 
   tagline: Software Engineer
 
